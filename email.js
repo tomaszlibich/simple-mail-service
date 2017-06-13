@@ -27,13 +27,15 @@ function emailCallback(error) {
 }
 
 function sendEmail(params) {
-    emailServer.send({
+    const emailData = {
         from: params.from || process.env.DEFAULT_EMAIL_VALUES_FROM || 'No sender details',
         to: params.to || process.env.DEFAULT_EMAIL_VALUES_TO,
         cc: params.cc || process.env.DEFAULT_EMAIL_VALUES_CC || null,
         subject: params.subject || process.env.DEFAULT_EMAIL_VALUES_SUBJECT || 'No subject',
         text: params.message || process.env.DEFAULT_EMAIL_VALUES_MESSAGE || 'No message'
-    }, emailCallback);
+    };
+
+    emailServer.send(emailData, emailCallback);
 }
 
 function send(params, callback) {
