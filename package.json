@@ -1,0 +1,22 @@
+{
+  "name": "simple-mail-service",
+  "version": "0.0.8",
+  "description": "Simple Mail Service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mail",
+    "service"
+  ],
+  "author": "Tomasz Libich",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "dot-env": "0.0.1",
+    "emailjs": "^1.0.9",
+    "express": "^4.15.3",
+    "fs-extra": "^3.0.1"
+  }
+}
