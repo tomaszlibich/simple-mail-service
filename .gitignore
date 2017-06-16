@@ -3,6 +3,7 @@ node_modules
 
 # production
 logs
+ssl
 .env.json
 
 # misc
